@@ -14,6 +14,6 @@ This dataset was openly hosted on the kaggle platform :
 
 Furthermore, we created a custom dataset for gaining statistical insights into the images furnished in the original one. A copy of that is uploaded here and can also be found on Kaggle and Google drive via the following links : 
 
-* **Kaggle** : ****
+* **Kaggle** : **https://www.kaggle.com/fireheart7/melanoma-image-insights**
 * **G-Drive** : **https://drive.google.com/drive/folders/1fz6ts-ea_lU2LSWBKgHBnsJWw5OQfb-3?usp=sharing** 
 

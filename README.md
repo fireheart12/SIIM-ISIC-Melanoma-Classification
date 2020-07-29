@@ -28,6 +28,9 @@ It encapsulated :
 
 Some randomly sampled images from the training set : 
 
+![](https://github.com/CodingWitcher/SIIM-ISIC-Melanoma-Classification/blob/master/images_for_readme/melanoma_sample_01.jpg)
+![](https://github.com/CodingWitcher/SIIM-ISIC-Melanoma-Classification/blob/master/images_for_readme/melanoma_sample_02.jpg)
+![](https://github.com/CodingWitcher/SIIM-ISIC-Melanoma-Classification/blob/master/images_for_readme/melanoma_sample_03.jpg)
 
 
 

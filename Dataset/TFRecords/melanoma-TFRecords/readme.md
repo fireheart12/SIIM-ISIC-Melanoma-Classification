@@ -1,1 +1,2 @@
 
+Histogram Equalized + Denoised images

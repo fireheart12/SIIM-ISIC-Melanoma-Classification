@@ -63,7 +63,7 @@ Some randomly sampled images from the training set :
 
 * **tqdm** : Is a progress bar library with good support for nested loops and Jupyter notebooks.
 
-# (III) Accelerator Initialization and TFRecords: 
+# (IV) Accelerator Initialization and Dataset Loading Using tf.data API: 
 
 For this project we worked using **TFRecords**, which is binary storage format for our data. 
 
@@ -107,3 +107,13 @@ TPUs are hardware accelerators specialized in deep learning tasks. We used the o
 Each TPU core has a traditional vector processing part (VPU) as well as dedicated matrix multiplication hardware capable of processing 128x128 matrices. This is the part that specifically accelerates machine learning workloads.
 
 TPUs are equipped with 128GB of high-speed memory allowing larger batches, larger models and also larger training inputs.
+
+## Dataset loaded using tf.data API : 
+
+The tf.data API enables us to build complex input pipelines from simple, reusable pieces and use the resources to a superlative degree of efficiency. Hence, these effective data pipelines ensures that our accelerator TPU/GPU is always crunching and stays idle for a minimum time span.
+
+The following will illustrate the advantage of an efficient pipeline design : 
+
+![](https://github.com/CodingWitcher/SIIM-ISIC-Melanoma-Classification/blob/master/images_for_readme/pipelining.png)
+
+# (V) 

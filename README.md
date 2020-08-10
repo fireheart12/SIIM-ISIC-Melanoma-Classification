@@ -77,7 +77,7 @@ The datasets that are too large to be stored fully in memory, this is an advanta
 
 Another major advantage of TFRecords is that it is possible to store sequence data — for instance, a time series or word encodings — in a way that allows for very efficient and (from a coding perspective) convenient import of this type of data.
 
-## TFRecord :
+## TFRecords :
 
 A TFRecord file contains an array of **Examples**. *Example is a data structure for representing a record*, like an observation in a training or test dataset. A record is represented as a set of **features**, each of which has a name and can be an array of bytes, floats, or 64-bit integers.
 
@@ -108,7 +108,7 @@ Each TPU core has a traditional vector processing part (VPU) as well as dedicate
 
 TPUs are equipped with 128GB of high-speed memory allowing larger batches, larger models and also larger training inputs.
 
-## Dataset loaded using tf.data API : 
+## Dataset loading using tf.data API : 
 
 The tf.data API enables us to build complex input pipelines from simple, reusable pieces and use the resources to a superlative degree of efficiency. Hence, these effective data pipelines ensures that our accelerator TPU/GPU is always crunching and stays idle for a minimum time span.
 
@@ -116,4 +116,24 @@ The following will illustrate the advantage of an efficient pipeline design :
 
 ![](https://github.com/CodingWitcher/SIIM-ISIC-Melanoma-Classification/blob/master/images_for_readme/pipelining.png)
 
-# (V) 
+Before procedding further, a batch encapsulated in TFRecord is viewed to ensure the I/O design successfully works :
+
+![](https://github.com/CodingWitcher/SIIM-ISIC-Melanoma-Classification/blob/master/images_for_readme/sample_display.png)
+
+# (V) Model Construction : 
+
+## A. Malignant VS Benign Imbalance Analysis : 
+
+Upon inspection, the malignant to benign ratio was found to be 0.017. This denotes extreme skewness about the dataset(as exposed in the EDA as well) that is much needed to be addressed. So, **malignant** cases are **assigned a higher class weight** compared to the **benign** ones. This will encourage the model to pay more attention to malignant ones.
+
+According to official Tensorflow documentation :
+
+*Optional dictionary mapping class indices (integers) to a weight (float) value, used for weighting the loss function (during training only). This can be useful to tell the model to "pay more attention" to samples from an under-represented class*.
+
+## B. Defining CallBacks : 
+
+A callback is a powerful tool to customize the behavior of a Keras model during training, evaluation, or inference. Callbacks are useful to get a view on internal states and statistics of the model during training.
+
+This can be used to stop predictions when there is no change in the desired metric over a certain epoch range. This is amazingly useful in order to avoid **overfitting**.
+
+

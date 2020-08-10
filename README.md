@@ -63,5 +63,35 @@ Some randomly sampled images from the training set :
 
 * **tqdm** : Is a progress bar library with good support for nested loops and Jupyter notebooks.
 
+# (III) Accelerator Initialization and TFRecords: 
 
+For this project we worked using **TFRecords**, which is binary storage format for our data. 
 
+## Advantage of Binary Storage Scheme of TFRecords : 
+
+![](https://github.com/CodingWitcher/SIIM-ISIC-Melanoma-Classification/blob/master/images_for_readme/tfrecords.png)
+
+The binary storage data takes up relatively low space on our disk, and hence it takes less time to copy and can be read much more efficiently! Moreover, the tensorflow framework is optimized to handle tfrecords amazingly well.
+
+The datasets that are too large to be stored fully in memory, this is an advantage as only the data that is required at the time (e.g. a batch) is loaded from disk and then processed.
+
+Another major advantage of TFRecords is that it is possible to store sequence data — for instance, a time series or word encodings — in a way that allows for very efficient and (from a coding perspective) convenient import of this type of data.
+
+## TFRecord :
+
+A TFRecord file contains an array of **Examples**. *Example is a data structure for representing a record*, like an observation in a training or test dataset. A record is represented as a set of **features**, each of which has a name and can be an array of bytes, floats, or 64-bit integers.
+
+To summarize:
+
+* **An Example contains Features**.
+* **Features is a mapping from the feature names stored as strings to Features**.
+
+These relations are defined in *example.proto and feature.proto* in the TensorFlow's source code, along with extensive comments. As the extension *.proto* suggests, these definitions are based on protocol buffers.
+
+## So, What are Protocol Buffers ? 
+
+![](https://github.com/CodingWitcher/SIIM-ISIC-Melanoma-Classification/blob/master/images_for_readme/protocol%20buffers.png)
+
+Google’s Protocol buffers are a serialization scheme for structured data. In other words, protocol buffers are used for serializing structured data into a byte array, so that they can be sent over the network or stored as a file. In this sense, it is similar to JSON, XML.
+
+**Protocol buffers can offer a lot faster processing speed compared to text-based formats like JSON or XML**.

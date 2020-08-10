@@ -93,8 +93,63 @@ Upon loading and inspecting the dataframes for train and test, we found :
 We also found that  out of 33,126 registered entries in the training set, only 2,056 are unique implying that some patients are diagnosed with multiple marks.
 Same goes for the test set where we have only 690 unique values out of collection of 10,982.
 
-## B. 
+## B. Distribution Observation : 
 
+The following snapshots will say it all!!
+
+**Benign VS Malignant Overall** : 
+
+![](https://github.com/CodingWitcher/SIIM-ISIC-Melanoma-Classification/blob/master/images_for_readme/benign_vs_malig_train.png)
+
+**Male VS Female Counts** : 
+
+![](https://github.com/CodingWitcher/SIIM-ISIC-Melanoma-Classification/blob/master/images_for_readme/male_vs_female_count.png)
+
+**Malignant Male Cases VS Female Cases** : 
+
+![](https://github.com/CodingWitcher/SIIM-ISIC-Melanoma-Classification/blob/master/images_for_readme/malig_male_vs_females.png)
+
+**Benign Male VS Female Cases** : 
+
+![](https://github.com/CodingWitcher/SIIM-ISIC-Melanoma-Classification/blob/master/images_for_readme/benign_male_vs_female_cases.png)
+
+**Cancer VS Sex** : 
+
+![](https://github.com/CodingWitcher/SIIM-ISIC-Melanoma-Classification/blob/master/images_for_readme/cancer_vs_sex.png)
+
+**Age VS Cancer** : 
+
+![](https://github.com/CodingWitcher/SIIM-ISIC-Melanoma-Classification/blob/master/images_for_readme/age_vs_cancer.png)
+
+**Anatomy Sites** : 
+
+![](https://github.com/CodingWitcher/SIIM-ISIC-Melanoma-Classification/blob/master/images_for_readme/anatomy_sites.png)
+
+**Probablistic Age Distribution In Training Set** : 
+
+![](https://github.com/CodingWitcher/SIIM-ISIC-Melanoma-Classification/blob/master/images_for_readme/prob_age_dist.png)
+
+**Spread of Red Channel in BENIGN CASES** : 
+
+![](https://github.com/CodingWitcher/SIIM-ISIC-Melanoma-Classification/blob/master/images_for_readme/red_channel_benign.png)
+
+**Spread Of Green Channel in BENIGN CASES** : 
+
+![](https://github.com/CodingWitcher/SIIM-ISIC-Melanoma-Classification/blob/master/images_for_readme/green_channel_benign.png)
+
+**Spread Of Blue Channel in BENIGN CASES** : 
+
+![](https://github.com/CodingWitcher/SIIM-ISIC-Melanoma-Classification/blob/master/images_for_readme/blue_channel_benign.png)
+
+So, 
+
+**Spread In Benign : **
+
+![](https://github.com/CodingWitcher/SIIM-ISIC-Melanoma-Classification/blob/master/images_for_readme/channel_spread_benign.png)
+
+**Spread In Malignant : **
+
+![](https://github.com/CodingWitcher/SIIM-ISIC-Melanoma-Classification/blob/master/images_for_readme/channel_spread_malig.png)
 
 
 

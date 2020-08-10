@@ -282,6 +282,8 @@ When we compile our model, we do not want our metric to be accuracy. If we run t
 
 ## D. Setting Up A Deep Learning Architcture + Transfer Learning
 
+![](https://github.com/CodingWitcher/SIIM-ISIC-Melanoma-Classification/blob/master/images_for_readme/mobileNetV2.png)
+
 For this a custom head was designed to fit onto the head of the pre-trained imported model. Various architectures were tried, such as ResNet50, EfficientNet, DenseNet, however **from the point of view of production**, we **settled on MobileNetV2 Architecture** as it only has a **2-3 million parameters**. This architecture can be effectively deployed in production, and also it gave us an overall accuracy of about **85%** on the test set and **86%** on the training set.
 
 The training result : 

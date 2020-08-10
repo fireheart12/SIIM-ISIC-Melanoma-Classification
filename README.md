@@ -152,6 +152,25 @@ So,
 ![](https://github.com/CodingWitcher/SIIM-ISIC-Melanoma-Classification/blob/master/images_for_readme/channel_spread_malig.png)
 
 
+So, we observe that in both the cases the component of red spikes the most, whereas Blue and Green are close to each other. All the channels also appears to be a bit negatively skewed.
+
+**Hence, the channel distribution won't be a powerful feature to differentiate between the malignant and benign cases.**
+
+Kutosis of this distribution is manageable.
+
+## C. Dealing With Missing Values : 
+
+Anatomy sites, patient's sex and age values were previously found missing which were then filled here according to the insights obtained in the EDA before. Read the notebook or the code file. Markdowns are provided for the logic used to decide how to fill the missing values.
+
+![](https://github.com/CodingWitcher/SIIM-ISIC-Melanoma-Classification/blob/master/images_for_readme/patient_sex.png)
+
+![](https://github.com/CodingWitcher/SIIM-ISIC-Melanoma-Classification/blob/master/images_for_readme/patient_age.png)
+
+## D. Getting Insights On Image Shapes : 
+
+![](https://github.com/CodingWitcher/SIIM-ISIC-Melanoma-Classification/blob/master/images_for_readme/shape.png)
+
+We observe that most common dimension in training and testing set's intersection is 1800 X 1800 to 2500 X 2500. 
 
 
 

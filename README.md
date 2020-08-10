@@ -63,7 +63,24 @@ Some randomly sampled images from the training set :
 
 * **tqdm** : Is a progress bar library with good support for nested loops and Jupyter notebooks.
 
-# (IV) Exploratory Data Analysis (EDA) : 
+# (IV) Custom Dataset Preparation : 
+
+In order to avoid unnecessary computation during the Exploratory Data Analysis(EDA) that follows, here we will prepare custom dataframe encapsulating necessary image oriented features such as :
+* Image Name
+* Image Path
+* Number of Rows
+* Number of Columns
+* Channels
+* Image Mean
+* Image Standard Deviation
+* Image Skewness
+* Mean Red Value
+* Mean Green Value
+* Mean Blue Value
+
+The notebook is also available on Kaggle : **https://www.kaggle.com/fireheart7/melanoma-a-story-in-3-parts-part-one?scriptVersionId=38737538**
+
+# (V) Exploratory Data Analysis (EDA) : 
 
 Notebook link(code is also available in this repository) : **https://www.kaggle.com/fireheart7/melanoma-a-story-in-3-parts-part-two**
 
@@ -143,11 +160,11 @@ The following snapshots will say it all!!
 
 So, 
 
-**Spread In Benign : **
+**Spread In Benign** : 
 
 ![](https://github.com/CodingWitcher/SIIM-ISIC-Melanoma-Classification/blob/master/images_for_readme/channel_spread_benign.png)
 
-**Spread In Malignant : **
+**Spread In Malignant** : 
 
 ![](https://github.com/CodingWitcher/SIIM-ISIC-Melanoma-Classification/blob/master/images_for_readme/channel_spread_malig.png)
 
@@ -184,7 +201,7 @@ In the end, we analyze **image mean**,**standard deviation** and **skewness** wi
 
 ![](https://github.com/CodingWitcher/SIIM-ISIC-Melanoma-Classification/blob/master/images_for_readme/test_3d.png)
 
-# (IV) Accelerator Initialization and Dataset Loading Using tf.data API: 
+# (VI) Accelerator Initialization and Dataset Loading Using tf.data API: 
 
 For this project we worked using **TFRecords**, which is binary storage format for our data. 
 
@@ -241,7 +258,7 @@ Before procedding further, a batch encapsulated in TFRecord is viewed to ensure 
 
 ![](https://github.com/CodingWitcher/SIIM-ISIC-Melanoma-Classification/blob/master/images_for_readme/sample_display.png)
 
-# (V) Model Construction : 
+# (VII) Model Construction : 
 
 ## A. Malignant VS Benign Imbalance Analysis : 
 

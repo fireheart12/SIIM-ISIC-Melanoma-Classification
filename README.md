@@ -63,6 +63,43 @@ Some randomly sampled images from the training set :
 
 * **tqdm** : Is a progress bar library with good support for nested loops and Jupyter notebooks.
 
+# (IV) Exploratory Data Analysis (EDA) : 
+
+Notebook link(code is also available in this repository) : **https://www.kaggle.com/fireheart7/melanoma-a-story-in-3-parts-part-two**
+
+When we’re getting started with a machine learning (ML) project, one critical principle to keep in mind is that data is everything. It is often said that if ML is the rocket engine, then the fuel is the (high-quality) data fed to ML algorithms. However, deriving truth and insight from a pile of data can be a complicated and error-prone job. To have a solid start for our ML project, it always helps to analyze the data up front.
+
+During EDA, it’s important that we get a deep understanding of:
+
+* The properties of the data, such as schema and statistical properties;
+* The quality of the data, like missing values and inconsistent data types;
+* The predictive power of the data, such as correlation of features against target.
+
+## A. Loading the Dataframes : 
+
+Upon loading and inspecting the dataframes for train and test, we found : 
+
+**Train Insights** : 
+
+![](https://github.com/CodingWitcher/SIIM-ISIC-Melanoma-Classification/blob/master/images_for_readme/train%20insights.png)
+
+**Test Insights** : 
+
+![](https://github.com/CodingWitcher/SIIM-ISIC-Melanoma-Classification/blob/master/images_for_readme/test%20insights.png)
+
+* Training set : Sex, age and anatomy_site have missing values.
+* Test set : Anatomy_site have missing values.
+
+We also found that  out of 33,126 registered entries in the training set, only 2,056 are unique implying that some patients are diagnosed with multiple marks.
+Same goes for the test set where we have only 690 unique values out of collection of 10,982.
+
+## B. 
+
+
+
+
+
+
 # (IV) Accelerator Initialization and Dataset Loading Using tf.data API: 
 
 For this project we worked using **TFRecords**, which is binary storage format for our data. 
@@ -135,5 +172,19 @@ According to official Tensorflow documentation :
 A callback is a powerful tool to customize the behavior of a Keras model during training, evaluation, or inference. Callbacks are useful to get a view on internal states and statistics of the model during training.
 
 This can be used to stop predictions when there is no change in the desired metric over a certain epoch range. This is amazingly useful in order to avoid **overfitting**.
+
+## C. Setting An Evaluation Metric : 
+
+When we compile our model, we do not want our metric to be accuracy. If we run the model, with an accuracy metric, it will give us false confidence in our model. If we look at the dataset, we see that 98% of the images are classifed as benign, 0. Now, if accuracy was the sole determinant of our model, a model that always outputs 0 will achieve a high accuracy although the model is not good.
+
+**We will use ROC Curve to evaluate**, which is why our metric will be set to **tf.keras.metrics.AUC**.
+
+## D. Setting Up A Deep Learning Architcture + Transfer Learning
+
+For this a custom head was designed to fit onto the head of the pre-trained imported model. Various architectures were tried, such as ResNet50, EfficientNet, DenseNet, however **from the point of view of production**, we **settled on MobileNetV2 Architecture** as it only has a **2-3 million parameters**. This architecture can be effectively deployed in production, and also it gave us an overall accuracy of about **85%** on the test set and **86%** on the training set.
+
+The training result : 
+
+![](https://github.com/CodingWitcher/SIIM-ISIC-Melanoma-Classification/blob/master/images_for_readme/res1.png)
 
 

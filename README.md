@@ -290,4 +290,17 @@ The training result :
 
 ![](https://github.com/CodingWitcher/SIIM-ISIC-Melanoma-Classification/blob/master/images_for_readme/res1.png)
 
+# Notebook Links : 
+
+All these notebooks have also been published on Kaggle : 
+* **TFRecord Design** : **https://www.kaggle.com/fireheart7/melanoma-design-tf-records**
+* **Melanoma - A Story in Three Parts- Part One** : **https://www.kaggle.com/fireheart7/melanoma-a-story-in-3-parts-part-one**
+* **Melanoma - A Story in Three Parts - Part Two** : **https://www.kaggle.com/fireheart7/melanoma-a-story-in-3-parts-part-two**
+* **Melanoma - A Story in Three Parts - Part Three** : **https://github.com/CodingWitcher/SIIM-ISIC-Melanoma-Classification/blob/master/MobileNetV2.ipynb** (This repository)
+
+# Thank You : 
+
+Thank you for reading this far!!
+
+**Contact** : **bauraiaditya7@gmail.com**
 

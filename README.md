@@ -95,3 +95,15 @@ These relations are defined in *example.proto and feature.proto* in the TensorFl
 Google’s Protocol buffers are a serialization scheme for structured data. In other words, protocol buffers are used for serializing structured data into a byte array, so that they can be sent over the network or stored as a file. In this sense, it is similar to JSON, XML.
 
 **Protocol buffers can offer a lot faster processing speed compared to text-based formats like JSON or XML**.
+
+The aforemntioned TFRecords are crunched using **TPU** which we initialized in our code.
+
+## Tensor Processing Unit(TPU) :
+
+TPUs are hardware accelerators specialized in deep learning tasks. We used the one provided by Kaggle platform for this project. 
+
+![](https://github.com/CodingWitcher/SIIM-ISIC-Melanoma-Classification/blob/master/images_for_readme/tpu_cores_and_chips.png)
+
+Each TPU core has a traditional vector processing part (VPU) as well as dedicated matrix multiplication hardware capable of processing 128x128 matrices. This is the part that specifically accelerates machine learning workloads.
+
+TPUs are equipped with 128GB of high-speed memory allowing larger batches, larger models and also larger training inputs.

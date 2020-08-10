@@ -33,4 +33,35 @@ Some randomly sampled images from the training set :
 ![](https://github.com/CodingWitcher/SIIM-ISIC-Melanoma-Classification/blob/master/images_for_readme/melanoma_sample_03.jpg)
 
 
+# (III) Libraries Used : 
+
+* **Numpy** : Fundamental package for scientific computing in Python3, helping us in creating and managing n-dimensional tensors. A vector can be regarded as a 1-D tensor, matrix as 2-D, and so on.
+
+![](https://raw.githubusercontent.com/CodingWitcher/Leaf_Diseases/master/images_for_readme/tensor.jpg)
+
+* **Pandas** : Pandas is a software library written for the Python programming language for data manipulation and analysis. In particular, it offers data structures and operations for manipulating numerical tables and time series.
+
+![](https://github.com/CodingWitcher/SIIM-ISIC-Melanoma-Classification/blob/master/images_for_readme/pandas.jpeg)
+
+* **Matplotlib and Seaborn** : Python3 plotting libraries used for data visualization.
+
+![](https://github.com/CodingWitcher/SIIM-ISIC-Melanoma-Classification/blob/master/images_for_readme/data%20viz.png)
+
+* **OpenCV** : OpenCV (Open Source Computer Vision Library) is an open source computer vision and machine learning software library. OpenCV was built to provide a common infrastructure for computer vision applications and to accelerate the use of machine perception in the commercial products. The library has more than 2500 optimized algorithms, which includes a comprehensive set of both classic and state-of-the-art computer vision and machine learning algorithms. The library is used extensively in companies, research groups and by governmental bodies.
+
+*Homepage* : **https://opencv.org/**
+
+![](https://github.com/CodingWitcher/SIIM-ISIC-Melanoma-Classification/blob/master/images_for_readme/pyopencv.png)
+
+* **Tensorflow** : Is an open source deep learning framework for dataflow and differentiable programming. It’s created and maintained by Google.
+
+![](https://github.com/CodingWitcher/SIIM-ISIC-Melanoma-Classification/blob/master/images_for_readme/tensorflow.png)
+
+* **SciKit-Learn** : Scikit-learn is a free software machine learning library for the Python programming language. It features various classification, regression and clustering algorithms. 
+
+![](https://github.com/CodingWitcher/SIIM-ISIC-Melanoma-Classification/blob/master/images_for_readme/sklearn.webp)
+
+* **tqdm** : Is a progress bar library with good support for nested loops and Jupyter notebooks.
+
+
 

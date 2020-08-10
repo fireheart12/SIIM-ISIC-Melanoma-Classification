@@ -172,7 +172,17 @@ Anatomy sites, patient's sex and age values were previously found missing which 
 
 We observe that most common dimension in training and testing set's intersection is 1800 X 1800 to 2500 X 2500. 
 
+## E. 3-D Analysis : 
 
+In the end, we analyze **image mean**,**standard deviation** and **skewness** with one another. For this we will use plotly's express. Plotly Express is the easy-to-use, high-level interface to Plotly, which operates on a variety of types of data and produces easy-to-style figures.
+
+**Train Images 3-D Analysis** : 
+
+![](https://github.com/CodingWitcher/SIIM-ISIC-Melanoma-Classification/blob/master/images_for_readme/train_3d.png)
+
+**Test Images 3-D Analysis** : 
+
+![](https://github.com/CodingWitcher/SIIM-ISIC-Melanoma-Classification/blob/master/images_for_readme/test_3d.png)
 
 # (IV) Accelerator Initialization and Dataset Loading Using tf.data API: 
 
